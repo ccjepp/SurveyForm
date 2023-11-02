@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>SURVEY FORM</h1>
+    <p>We appriciate your participation in our industry. Please take the survey & leave a remarks below to help with future improvement.</p>
+
+    <form action="#">
+        <fieldset>
+            <legend><b>Personal Infomation</b></legend>
+            <label for="Name">Name: <input type="text" id="Name"></label>
+            <label for="Age">Age: <input type="number" min="16" max="100" id="Age"></label>
+            <label for="Address">Address: <input type="text" id="Address"></label>
+            <label for="email">Email: <input type="email" id="email"></label>
+            <label for="Phone">Phone: <input type="number" max="9" id="Phone"></label>
+        </fieldset>
+        <fieldset>  
+            <label for="referrer">How did you here about us?
+                <select name="referrer" id="referrer">
+                    <option value="">(select 1)</option>
+                    <option value="1">Social Media</option>
+                    <option value="2">Ads</option>
+                    <option value="3">Friend</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend><b>Gender</b></legend>
+            <label><input type="radio" name="gender" class="inline" id="gender"> Male</label>
+            <label><input type="radio" name="gender" class="inline" id="gender"> Female</label>
+        </fieldset>
+        <fieldset>
+            <label for="question1"> Question 1. Type here your question. Which is your question?
+                <textarea name="question1" id="question1" cols="100" rows="10" placeholder="Type here your answer"></textarea>
+            </label>
+            <label for="question2"> Question 1. Type here your question. Which is your question?
+                <textarea name="question2" id="question2" cols="100" rows="10" placeholder="Type here your answer"></textarea>
+            </label>
+            <label for="question3"> Question 1. Type here your question. Which is your question?
+                <textarea name="question3" id="question3" cols="100" rows="10" placeholder="Type here your answer"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="SUBMIT">
+    </form>
+
+
+</body>
+</html>
